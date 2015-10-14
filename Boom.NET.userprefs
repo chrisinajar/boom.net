@@ -1,1 +1,9 @@
-﻿<Properties StartupItem="Boom.NET/Boom.NET.csproj" />
+﻿<Properties StartupItem="Boom.NET/Boom.NET.csproj">
+  <AuthorInfo Name="Chris Vickery" Email="chrisinajar@gmail.com" Copyright="MIT" Company="" Trademark="" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
