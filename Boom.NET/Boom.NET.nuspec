@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <version>0.1.0</version>
+    <authors>Chris Vickery</authors>
+    <owners>Chris Vickery</owners>
+    <licenseUrl>https://github.com/chrisinajar/boom.net/blob/master/COPYING</licenseUrl>
+    <projectUrl>https://github.com/chrisinajar/boom.net</projectUrl>
+    <id>boom</id>
+    <title>Boom.NET</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Developer friendly HTTP-based exceptions based on hapijs/Boom.</description>
+    <summary>Developer friendly HTTP-based exceptions based on hapijs/Boom.</summary>
+    <copyright>Chris Vickery, MIT 2015</copyright>
+  </metadata>
+</package>
+

@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProjectGuid>{EC0F710B-ED59-4AD3-91A9-5EA46E9C010D}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Boom.NET</RootNamespace>
+    <RootNamespace>Boom</RootNamespace>
     <AssemblyName>Boom.NET</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
@@ -31,6 +31,7 @@
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
+    <Reference Include="System" />
     <Reference Include="System.Net" />
     <Reference Include="System.Net.Http" />
   </ItemGroup>
@@ -38,5 +39,9 @@
     <Compile Include="BoomException.cs" />
     <Compile Include="BoomOutput.cs" />
     <Compile Include="Exceptions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Boom.NET.nuspec" />
   </ItemGroup>
 </Project>
