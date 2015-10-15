@@ -1,144 +1,131 @@
 ﻿using System;
+using System.Net;
 
 namespace Boom
 {
 	public class BadRequest : BoomException
 	{
 		public BadRequest(string message = null)
-			: base(message, 400)
+			: base(message, HttpStatusCode.BadRequest)
 		{
 		}
 	}
 	public class Unauthorized : BoomException
 	{
 		public Unauthorized(string message = null)
-			: base(message, 401)
+			: base(message, HttpStatusCode.Unauthorized)
 		{
 		}
 	}
 	public class Forbidden : BoomException
 	{
 		public Forbidden(string message = null)
-			: base(message, 403)
+			: base(message, HttpStatusCode.Forbidden)
 		{
 		}
 	}
 	public class NotFound : BoomException
 	{
 		public NotFound(string message = null)
-			: base(message, 404)
+			: base(message, HttpStatusCode.NotFound)
 		{
 		}
 	}
 	public class MethodNotAllowed : BoomException
 	{
 		public MethodNotAllowed(string message = null)
-			: base(message, 405)
+			: base(message, HttpStatusCode.MethodNotAllowed)
 		{
 		}
 	}
 	public class NotAcceptable : BoomException
 	{
 		public NotAcceptable(string message = null)
-			: base(message, 406)
+			: base(message, HttpStatusCode.NotAcceptable)
 		{
 		}
 	}
 	public class ProxyAuthRequired : BoomException
 	{
 		public ProxyAuthRequired(string message = null)
-			: base(message, 407)
+			: base(message, HttpStatusCode.ProxyAuthenticationRequired)
 		{
 		}
 	}
 	public class ClientTimeout : BoomException
 	{
 		public ClientTimeout(string message = null)
-			: base(message, 408)
+			: base(message, HttpStatusCode.RequestTimeout)
 		{
 		}
 	}
 	public class Conflict : BoomException
 	{
 		public Conflict(string message = null)
-			: base(message, 409)
+			: base(message, HttpStatusCode.Conflict)
 		{
 		}
 	}
 	public class ResourceGone : BoomException
 	{
 		public ResourceGone(string message = null)
-			: base(message, 410)
+			: base(message, HttpStatusCode.Gone)
 		{
 		}
 	}
 	public class LengthRequired : BoomException
 	{
 		public LengthRequired(string message = null)
-			: base(message, 411)
+			: base(message, HttpStatusCode.LengthRequired)
 		{
 		}
 	}
 	public class PreconditionFailed : BoomException
 	{
 		public PreconditionFailed(string message = null)
-			: base(message, 412)
+			: base(message, HttpStatusCode.PreconditionFailed)
 		{
 		}
 	}
 	public class EntityTooLarge : BoomException
 	{
 		public EntityTooLarge(string message = null)
-			: base(message, 413)
+			: base(message, HttpStatusCode.RequestEntityTooLarge)
 		{
 		}
 	}
 	public class UriTooLong : BoomException
 	{
 		public UriTooLong(string message = null)
-			: base(message, 414)
+			: base(message, HttpStatusCode.RequestUriTooLong)
 		{
 		}
 	}
 	public class UnsupportedMediaType : BoomException
 	{
 		public UnsupportedMediaType(string message = null)
-			: base(message, 415)
+			: base(message, HttpStatusCode.UnsupportedMediaType)
 		{
 		}
 	}
 	public class RangeNotSatisfiable : BoomException
 	{
 		public RangeNotSatisfiable(string message = null)
-			: base(message, 416)
+			: base(message, HttpStatusCode.RequestedRangeNotSatisfiable)
 		{
 		}
 	}
 	public class ExpectationFailed : BoomException
 	{
 		public ExpectationFailed(string message = null)
-			: base(message, 417)
-		{
-		}
-	}
-	public class BadData : BoomException
-	{
-		public BadData(string message = null)
-			: base(message, 422)
-		{
-		}
-	}
-	public class TooManyRequests : BoomException
-	{
-		public TooManyRequests(string message = null)
-			: base(message, 429)
+			: base(message, HttpStatusCode.ExpectationFailed)
 		{
 		}
 	}
 
 	public class InternalError : BoomException
 	{
-		public InternalError(int statusCode, string message)
+		public InternalError(HttpStatusCode statusCode, string message)
 			: base(message, statusCode)
 		{
 		}
@@ -146,35 +133,35 @@ namespace Boom
 	public class NotImplemented : BoomException
 	{
 		public NotImplemented(string message = null)
-			: base(message, 501)
+			: base(message, HttpStatusCode.NotImplemented)
 		{
 		}
 	}
 	public class BadGateway : BoomException
 	{
 		public BadGateway(string message = null)
-			: base(message, 502)
+			: base(message, HttpStatusCode.BadGateway)
 		{
 		}
 	}
 	public class ServerTimeout : BoomException
 	{
 		public ServerTimeout(string message = null)
-			: base(message, 503)
+			: base(message, HttpStatusCode.ServiceUnavailable)
 		{
 		}
 	}
 	public class GatewayTimeout : BoomException
 	{
 		public GatewayTimeout(string message = null)
-			: base(message, 504)
+			: base(message, HttpStatusCode.GatewayTimeout)
 		{
 		}
 	}
 	public class BadImplementation : BoomException
 	{
 		public BadImplementation(string message = null)
-			: base(message, 500)
+			: base(message, HttpStatusCode.InternalServerError)
 		{
 		}
 	}

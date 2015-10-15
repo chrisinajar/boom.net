@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Net;
+using System.Net.Http;
+using System.Net.Http.Formatting;
 
 namespace Boom
 {
@@ -9,18 +12,16 @@ namespace Boom
 		public readonly bool isBoom = true;
 		public bool isServer {
 			get {
-				return this.output.statusCode >= 500;
+				return this.output.statusCode >= System.Net.HttpStatusCode.InternalServerError;
 			}
 			set { }
 		}
 		public BoomOutput output;
 
-
-		public BoomException (string _message, int _statusCode = 500)
+		public BoomException (string _message, HttpStatusCode _statusCode = HttpStatusCode.InternalServerError)
 			: base(_message)
 		{
 			output = new BoomOutput(_message, _statusCode);
 		}
 	}
 }
-
