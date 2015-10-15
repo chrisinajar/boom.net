@@ -1,10 +1,22 @@
 ﻿<Properties StartupItem="Boom.NET/Boom.NET.csproj">
   <AuthorInfo Name="Chris Vickery" Email="chrisinajar@gmail.com" Copyright="MIT" Company="" Trademark="" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Boom.NET/BoomException.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Boom.NET/BoomOutput.cs">
     <Files>
-      <File FileName="Boom.NET/BoomException.cs" Line="4" Column="15" />
+      <File FileName="Boom.NET/BoomException.cs" Line="1" Column="1" />
+      <File FileName="Boom.NET/BoomExceptionFilter.cs" Line="1" Column="1" />
+      <File FileName="Boom.NET/BoomOutput.cs" Line="1" Column="1" />
+      <File FileName="Boom.NET/Exceptions.cs" Line="1" Column="1" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Boom.NET" expanded="True">
+            <Node name="Boom.NET" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
