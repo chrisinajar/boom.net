@@ -25,7 +25,9 @@ namespace Boom
 				return new BoomPayload() {
 					statusCode = this.statusCode,
 					error = this.getErrorMessage(),
-					message = this.getErrorMessage() + (this.message.Length>0 ? ": " + this.message : "")
+                    message = this.getErrorMessage() + (this.message != null && this.message.Length > 0 
+                            ? ": " + this.message 
+                            : "")
 				};
 			}
 			set { }

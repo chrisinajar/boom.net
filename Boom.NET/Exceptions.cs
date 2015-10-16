@@ -124,11 +124,15 @@ namespace Boom
 	}
 
 	public class InternalError : BoomException
-	{
-		public InternalError(HttpStatusCode statusCode, string message)
-			: base(message, statusCode)
-		{
-		}
+    {
+        public InternalError(HttpStatusCode statusCode, string message)
+            : base(message, statusCode)
+        {
+        }
+        public InternalError(Exception exception, HttpStatusCode statusCode = HttpStatusCode.InternalServerError, string message = null)
+            : base(exception, message, statusCode)
+        {
+        }
 	}
 	public class NotImplemented : BoomException
 	{

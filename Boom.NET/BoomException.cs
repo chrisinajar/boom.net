@@ -18,10 +18,15 @@ namespace Boom
 		}
 		public BoomOutput output;
 
-		public BoomException (string _message, HttpStatusCode _statusCode = HttpStatusCode.InternalServerError)
-			: base(_message)
-		{
-			output = new BoomOutput(_message, _statusCode);
-		}
+        public BoomException(string _message, HttpStatusCode _statusCode = HttpStatusCode.InternalServerError)
+            : base(_message)
+        {
+            output = new BoomOutput(_message, _statusCode);
+        }
+        public BoomException(Exception innerException, string _message = "", HttpStatusCode _statusCode = HttpStatusCode.InternalServerError)
+            : base(_message, innerException)
+        {
+            output = new BoomOutput(_message, _statusCode);
+        }
 	}
 }
