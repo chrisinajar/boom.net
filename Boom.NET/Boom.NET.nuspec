@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
-    <version>0.3.0</version>
+    <version>0.4.0</version>
     <authors>Chris Vickery</authors>
     <owners>Chris Vickery</owners>
     <licenseUrl>https://github.com/chrisinajar/boom.net/blob/master/COPYING</licenseUrl>
